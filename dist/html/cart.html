@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cart</title>
+    <link rel="stylesheet" href="../css/cart.css">
+    <script src="../js/jquery-2.1.1.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+</head>
+<body>
+
+<!--top-->
+<div class="top_back">
+    <div class="top">
+        <div class="top_left fl">
+            冷链配送 顺丰到家 送至：<span>郑州</span>
+        </div>
+        <div class="top_right fr">
+            <ul>
+                <li>嘿，欢迎来顺丰优选！</li>
+                <li><a href="">请登录</a></li>
+                <li><a href="">免费注册</a></li>
+                <li><a href="">我的订单</a></li>
+                <li><a href="">我的优选</a></li>
+                <li><a href="">移动客户端</a></li>
+                <li><a href="">帮助中心</a></li>
+                <li><a href="">网站导航</a></li>
+                <li><a href="">微信</a></li>
+                <li><a href="">新浪微博</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--header-->
+<header>
+    <div class="logo">
+        <a href="" class="logoleft"></a>
+        <a href="" class="logoright"></a>
+        <div class="logo-text">
+            <img src="http://i.sfimg.cn/html/images/logo_word.jpg" alt="">
+        </div>
+    </div>
+    <div>
+        <img src="http://i.sfimg.cn/com/images/step_01.jpg" alt="">
+    </div>
+</header>
+
+<!--主体cartMain-->
+<div class="cartMain">
+    <div class="cartHead">
+        <h3 class="cartMy fl">我的购物车</h3>
+        <div class="areaShow fl">
+            <strong class="toTxt">送至：</strong>
+            <div class="store-selector">
+                <div class="text">
+                    <div>河南省郑州市二七区</div>
+                </div>
+            </div>
+            <span class="areatips">提示：请选择您的收货区域，查看更准确的信息</span>
+        </div>
+    </div>
+    <div class="cartMain" id="cartMain">
+        <div class="cartThead">
+            <div class="tCol tCheckbox">
+                <input name="acart_list_check" id="Zall" type="checkbox" checked> 全选
+            </div>
+            <div class="tCol tGoods">商品</div>
+            <div class="tCol tPrice">单价</div>
+            <div class="tCol tPromotion">优惠</div>
+            <div class="tCol tQuantity">数量</div>
+            <div class="tCol tWeight">类别</div>
+            <div class="tCol tSubtotal">小计</div>
+            <div class="tCol tInventory">库存状态</div>
+            <div class="tCol toperator">操作</div>
+        </div>
+        <div id="proList">
+            <div id="all-putong">
+                <div class="cartColumnhd">
+                    <div class="cartCheckbox">
+                        <input id="Zpu" type="radio" checked> 优选商品
+                    </div>
+                </div>
+                <div class="cartItem">
+                    <!--<div class="cartPInfo">-->
+                        <!--<div class="pItem pCheckbox">-->
+                            <!--<input type="checkbox" name="cart_list" checked>-->
+                        <!--</div>-->
+                        <!--<div class="pItem pGoods">-->
+                            <!--<div class="cart_pimg">-->
+                                <!--<a href="">-->
+                                    <!--<img src="http://p02.sfimg.cn/2013/1400012181/middle_1400012181_1_1.jpg" alt="">-->
+                                <!--</a>-->
+                            <!--</div>-->
+                            <!--<div class="cart_pname">-->
+                                <!--<div>-->
+                                    <!--<a href="">帝王 12年调配苏格兰威士忌 700ml</a>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="pItem spree">-->
+                            <!--<span>￥115</span>-->
+                        <!--</div>-->
+                        <!--<div class="pItem pPromotion">&nbsp;</div>-->
+                        <!--<div class="pItem pQuantity">-->
+                            <!--<div class="cartAmout">-->
+                                <!--<button class="down">-</button>-->
+                                <!--<input type="text" value="1">-->
+                                <!--<button class="up">+</button>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="pItem pWeight"> 0.8kg </div>-->
+                        <!--<div class="pItem pSubtotal">￥<span id="total_price">115</span></div>-->
+                        <!--<div class="pItem pInventory">现货</div>-->
+                        <!--<div class="pItem pOperator">-->
+                            <!--<a href="">收藏</a>&nbsp;&nbsp;<a href="">删除</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+        <div class="cartOrderCount">
+            <div class="cartButtons">
+                <input type="text" value="删除选中的商品" class="cartclear" id="removeSelect">
+                <input type="text" value="清空购物车" class="cartclear" id="resetCart">
+            </div>
+            <div class="cartTotalItem">
+                <span id="all_Weight">数量总计：
+                    <span id="allWeight"></span>（含包装）
+                </span>
+                <span id="all_shopePrice">（不含运费）</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;商品总计：
+                <span class="cartPrice" id="allMoney">￥78</span>
+            </div>
+        </div>
+        <div class="cartJsuan">
+            <input type="button" class="goshop" value="继续购物">
+            <input type="button" value="去结算" class="jiesuan">
+        </div>
+    </div>
+</div>
+
+<!--footer-->
+<footer>
+    <div class="foot">
+        <div class="pageFooter">
+            <div class="middle">
+                <ul>
+                    <li class="kefu">9533858</li>
+                    <li>周一至周日8:30-22:00</li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li class="title">购物指南</li>
+                    <li><a href="">积分制度</a></li>
+                    <li><a href="">会员介绍</a></li>
+                    <li><a href="">购物流程</a></li>
+                    <li><a href="">常见问题</a></li>
+                </ul>
+                <ul>
+                    <li class="title">购物指南</li>
+                    <li><a href="">积分制度</a></li>
+                    <li><a href="">会员介绍</a></li>
+                    <li><a href="">购物流程</a></li>
+                    <li><a href="">常见问题</a></li>
+                </ul>
+                <ul>
+                    <li class="title">购物指南</li>
+                    <li><a href="">积分制度</a></li>
+                    <li><a href="">会员介绍</a></li>
+                    <li><a href="">购物流程</a></li>
+                    <li><a href="">常见问题</a></li>
+                </ul>
+                <ul>
+                    <li class="title">购物指南</li>
+                    <li><a href="">积分制度</a></li>
+                    <li><a href="">会员介绍</a></li>
+                    <li><a href="">购物流程</a></li>
+                    <li><a href="">常见问题</a></li>
+                </ul>
+                <ul class="sj">
+                    <li class="title">商家中心</li>
+                    <li><a href="">商家规则</a></li>
+                    <li><a href="">食品安全规范</a></li>
+                    <li><a href="">委托管理创业招募</a></li>
+                </ul>
+            </div>
+            <div class="left">
+                <ul class="f_ios">
+                    <li>
+                        <a href="">手机客户端</a>
+                    </li>
+                    <li>
+                        <span></span>
+                    </li>
+                </ul>
+                <ul class="f_wx">
+                    <li>官方微信</li>
+                    <li>
+                        <span></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="bottom">
+            <div class="_bottom_kx fl">
+                <span>
+                    <a href="">
+                        <img src="http://rr.knet.cn/static/images/logo/credit.png" alt="">
+                    </a>
+                </span>
+            </div>
+            <div class="_bottom_kx fl" style="margin-left: 5px">
+                <span>
+                    <a href="">
+                        <img src="http://icon.szfw.org/cert.png" alt="">
+                    </a>
+                </span>
+            </div>
+            <div class="_bottom_kx fl" style="margin-left: 5px">
+                <span>
+                    <a href="">
+                        <img src="http://i.sfimg.cn/html/images/bottom_sm.png" alt="">
+                    </a>
+                </span>
+            </div>
+            <div class="siteinfo fl">
+                <p>
+                    <span>
+                        <a href="">关于我们</a>
+                    </span>
+                    <span>
+                        <a href="">联系我们</a>
+                    </span>
+                    <span>
+                        <a href="">招聘人才</a>
+                    </span>
+                    <span>
+                        <a href="">友情链接</a>
+                    </span>
+                    <span>Copyright© 顺丰优选 sfbest.com 版权所有</span>
+                </p>
+                <p>
+                    <span>京公网安备11010502026831号</span>
+                    <span>
+                        <a href="" class="beian">京ICP证150325号</a>
+                    </span>
+                    <span>
+                        <a href="" class="beian">食品经营许可证JY11113080533669号</a>
+                    </span>
+                    <span>
+                        <a href="" class="beian">企业营业执照</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/cart.js"></script>
+
+</body>
+</html>

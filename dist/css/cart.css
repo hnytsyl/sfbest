@@ -1,0 +1,560 @@
+body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend{margin:0; padding:0;}
+ul,li,ol{list-style:none;}
+img,fieldset{border:0; }
+img{display:block;}
+a{text-decoration:none; color:#333;cursor: pointer}
+h1,h2,h3,h4,h5,h6{font-weight:100;}
+body{ font-family:"微软雅黑";font-size: 12px;}
+input,a{outline:none;}
+em{
+    font-style: normal;
+    font-weight: normal;
+}
+
+html{
+    background-color: #fff;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+
+.top,header,.cartMain{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/*top*/
+.top_back{
+    background-color: #f7f7f7;
+    height: 33px;
+}
+.top{
+
+}
+.top_left{
+    line-height: 34px;
+    font-size: 12px;
+    color: #969696;
+}
+.top_left span{
+    width: 50px;
+    height: 20px;
+    border: 1px solid #dcdcdc;
+    display: inline-block;
+    line-height: 20px;
+    text-align: center;
+    margin-left: 8px;
+}
+.top_right li{
+    float: left;
+    font-size: 12px;
+    line-height: 34px;
+    color: #999999;
+}
+.top_right li a {
+    display: block;
+    padding: 0 12px;
+    color: #999999;
+}
+
+/*header*/
+header{
+    height: 104px;
+}
+header .logo{
+    width: 240px;
+    margin: 0;
+    float: left;
+    padding: 5px 0px 0px 0px;
+    position: relative;
+}
+header .logoleft{
+    display: block;
+    position: absolute;
+    left: 0px;
+    width: 124px;
+    padding: 0px 0px 0px 0px;
+    background: url(http://i.sfimg.cn/html/images/indexImg20130307.png?v=1.5) -33px 0px no-repeat;
+    height: 66px;
+}
+header .logoright{
+    display: block;
+    position: absolute;
+    width: 116px;
+    right: 0;
+    height: 66px;
+    background: url(http://i.sfimg.cn/html/images/indexImg20130307.png?v=1.5)no-repeat -160px 0;
+}
+header .logo-text {
+    position: absolute;
+    top: 73px;
+    left: 0;
+    color: #000;
+    font-size: 14px;
+    clear: both;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 240px;
+}
+header>div:last-of-type{
+    float: right;
+    width: 650px;
+    padding-top: 30px;
+}
+
+/*主体cartMain*/
+.cartMain .cartHead{
+    padding: 0 0 10px 0;
+    overflow: hidden;
+}
+.cartMy{
+    font-size: 20px;
+    line-height: 26px;
+}
+.cartHead .toTxt{
+    font-size: 14px;
+    float: left;
+    height: 26px;
+    line-height: 26px;
+    margin: 0 5px 0 20px;
+}
+.cartHead .store-selector{
+    float: left;
+    height: 26px;
+    margin-right: 6px;
+    position: relative;
+}
+.store-selector .text{
+    background: #FFFFFF;
+    border: 1px solid #CECBCE;
+    float: left;
+    height: 23px;
+    line-height: 23px;
+    overflow: hidden;
+    padding: 0 20px 0 4px;
+    position: relative;
+    top: 0;
+    font-size: 12px;
+    font-weight: normal;
+    width: auto;
+    max-width: 500px;
+}
+.areatips {
+    line-height: 26px;
+    margin-left: 10px;
+}
+.cartThead {
+    overflow: hidden;
+}
+.tCol {
+    float: left;
+    height: 34px;
+    line-height: 34px;
+    background-color: #81A84A;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+.tCheckbox{
+    width: 70px;
+}
+.tGoods{
+    width: 280px;
+}
+.tPrice{
+    width: 100px;
+}
+.tPromotion{
+    width: 100px;
+}
+.tQuantity{
+    width: 90px;
+}
+.tWeight{
+    width: 100px;
+}
+.tSubtotal{
+    width: 100px;
+}
+.tInventory{
+    width: 70px;
+}
+.toperator{
+    width: 90px;
+}
+#proList{
+    min-height: 50px;
+}
+.cartColumnhd{
+    background-color: #f2f6ed;
+    height: 25px;
+    line-height: 25px;
+    padding: 5px 10px;
+}
+.cartCheckbox{
+    color: #565656;
+    font-size: 12px;
+    font-weight: bold;
+}
+.cartCheckbox input{
+    margin: 0 5px;
+}
+.cartPInfo {
+    overflow: hidden;
+    padding: 20px 0;
+    border-bottom: 1px solid #EBF7EF;
+}
+.pItem{
+    position: relative;
+    float: left;
+    color: #6B6B6B;
+    text-align: center;
+    line-height: 20px;
+}
+.pCheckbox{
+    width: 70px;
+    padding: 20px 0 0 0;
+}
+.pCheckbox input{
+    vertical-align: middle;
+}
+.pGoods {
+    width: 280px;
+    text-align: left;
+}
+.cart_pimg {
+    border: 1px solid #EEEEEE;
+    display: inline;
+    float: left;
+    height: 60px;
+    margin-right: 10px;
+    overflow: hidden;
+    width: 60px;
+}
+.cart_pimg img{
+    width: 62px;
+    height: 62px;
+}
+.cart_pname {
+    color: #6B6B6B;
+    line-height: 20px;
+    overflow: hidden;
+}
+.spree{
+    padding-top: 10px;
+    width: 100px;
+    float: left;
+    font-weight: bold;
+}
+.pPromotion{
+    width: 100px;
+}
+.pQuantity{
+    width: 90px;
+}
+.cartAmount {
+    margin: 1px auto;
+    width: 55px;
+    height: 18px;
+    overflow: hidden;
+    zoom: 1;
+}
+.cartAmout button{
+    background-color: #eeeeee;
+    color: #7d7d7d;
+    cursor: pointer;
+    display: inline-block;
+    height: 12px;
+    line-height: 12px;
+    margin: 1px 0 0 0;
+    text-decoration: none;
+    width: 10px;
+    float: left;
+    font-size: 12px;
+    vertical-align: middle;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #cacaca;
+    overflow: hidden;
+    text-align: center;
+}
+.cartAmout input{
+    float: left;
+    font-size: 12px;
+    height: 14px;
+    line-height: 14px;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    width: 25px;
+    margin: 0 2px;
+    color: #6B6B6B;
+}
+.pWeight{
+    width: 100px;
+}
+.pSubtotal {
+    width: 100px;
+    color: #EA5404;
+    font-weight: bold;
+}
+.pInventory{
+    width: 70px;
+}
+.pOperator {
+    width: 90px;
+}
+.cartOrderCount {
+    margin-top: 10px;
+    border: 1px solid #dadada;
+    overflow: hidden;
+    zoom: 1;
+}
+.cartButtons {
+    float: left;
+    width: 300px;
+    padding: 5px 0;
+}
+.cartclear {
+    background: url(http://i.sfimg.cn/pcfront/cart/images/cartbg.gif) no-repeat scroll 0 -105px;
+    border: 0;
+    color: #6B6B6B;
+    cursor: pointer;
+    height: 18px;
+    line-height: 18px;
+    margin: 10px;
+    overflow: hidden;
+    padding: 0 0 0 15px;
+    text-align: left;
+    width: 110px;
+}
+.cartTotalItem {
+    float: right;
+    width: 600px;
+    text-align: right;
+    line-height: 38px;
+    padding: 3px 10px 0 0;
+}
+.cartPrice {
+    color: #EA5404;
+    font-size: 22px;
+}
+.cartJsuan {
+    text-align: right;
+    padding: 10px;
+}
+.goshop {
+    background: url(http://i.sfimg.cn/pcfront/cart/images/header.png) no-repeat 0 -225px;
+    height: 28px;
+    width: 73px;
+    border: 1px solid #a5cf69;
+    color: #666666;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+}
+.jiesuan {
+    background: #6e9b0c;
+    height: 45px;
+    width: 150px;
+    border: 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*footer*/
+footer{
+    margin-top: 20px;
+    line-height: 18px;
+    color: #969696;
+    width: 100%;
+    overflow: hidden;
+    border-top: 1px solid #E0E0E0;
+}
+.footer_zd{
+    height: 120px;
+    background: #F5F5F5;
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+.footer_zd ul{
+    width: 1200px;
+    margin: 0 auto;
+}
+footer .footer_zd ul li {
+    width: 300px;
+    height: 120px;
+    float: left;
+}
+.quanqiu{
+    background: url(../imgs/f1.png)no-repeat center center;
+}
+.chandi{
+    background: url(../imgs/f2.png)no-repeat center center;
+}
+.qcl1{
+    background: url(../imgs/f3.png)no-repeat center center;
+}
+.sfzd{
+    background: url(../imgs/f4.png)no-repeat center center;
+}
+.foot{
+    width: 100%;
+    height: 285px;
+
+}
+.pageFooter{
+    width: 1200px;
+    margin: 0 auto;
+}
+.clear{
+    clear: both;
+    padding: 0px;
+    font-size: 0px;
+    margin: 0px;
+    height: 0px;
+    line-height: 0;
+    overflow: hidden;
+    display: block;
+}
+.foot .bottom{
+    position: relative;
+    width: 1180px;
+    height: 50px;
+    margin: 0px auto;
+    border-top: 1px solid #E0E0E0;
+    padding-top: 15px;
+}
+.pageFooter .middle{
+    float: left;
+    width: 290px;
+    height: 145px;
+    margin: 20px 0px 0px 10px;
+    background: url(http://i.sfimg.cn/html/images/foot/logo.jpg) no-repeat left top;
+}
+.pageFooter .middle ul{
+    padding: 85px 0 0 0;
+    font-size: 12px;
+}
+.pageFooter .middle ul .kefu{
+    font-size: 20px;
+    color: #646464;
+    font-weight: bold;
+    padding: 6px 0;
+}
+.pageFooter .right{
+    float: left;
+    margin: 35px 0 0 0;
+    width: 645px;
+}
+.pageFooter .right ul {
+    float: left;
+    margin: 0px 8px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    width: 120px;
+}
+.pageFooter .right ul li {
+    text-align: left;
+    height: 24px;
+    line-height: 24px;
+    color: #646464;
+}
+.pageFooter .right ul li.title {
+    color: #707070;
+    font-weight: bold;
+    font-size: 14px;
+}
+.pageFooter .right ul li a{
+    color: #646464;
+    text-decoration: none;
+    display: block;
+    padding: 0px 0px 0px 0px;
+    font-size: 12px;
+}
+.pageFooter .left{
+    float: left;
+    margin: 35px 0 0 0;
+    width: 235px;
+    height: 145px;
+}
+.pageFooter .left ul {
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+    float: left;
+}
+.pageFooter .left ul li {
+    font-size: 14px;
+    color: #666666;
+    font-weight: bold;
+}
+.pageFooter .left .f_ios li {
+    width: 80px;
+    text-align: center;
+    margin: 0 50px 8px 0;
+    line-height: 24px;
+}
+.pageFooter .left .f_ios span {
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: url(../imgs/foot_bottom.png) no-repeat 0px 0px;
+    margin: auto;
+}
+.pageFooter .left .f_wx li {
+    width: 80px;
+    text-align: center;
+    margin: 0 0 8px 0;
+    line-height: 24px;
+}
+.pageFooter .left .f_wx span {
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: url(../imgs/foot_bottom.png) no-repeat -83px 0px;
+    margin: auto;
+}
+footer .bottom {
+    width: 1180px;
+    height: 50px;
+    margin: 0px auto;
+    border-top: 1px solid #E0E0E0;
+    padding-top: 15px;
+    position: relative;
+}
+._bottom_kx span{
+    display: inline-block;
+    position: relative;
+    width: 94px;
+    height: 33px;
+}
+._bottom_kx span img{
+    border: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 94px;
+    height: 33px;
+}
+.siteinfo{
+    position: absolute;
+    top: 13px;
+    left: 285px;
+    padding: 0;
+}
+.siteinfo span {
+    padding-left: 13px;
+    font-size: 12px;
+    color: #969696;
+}
+.siteinfo span a{
+    color: #646464;
+}
+.beian{
+    color: #969696;
+}

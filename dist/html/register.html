@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+    <link rel="stylesheet" href="../css/register.css">
+    <script src="../js/jquery-2.1.1.js"></script>
+</head>
+<body>
+<!--header-->
+<header>
+    <a href="index.html">
+        <img src="../imgs/logo%20(1).png" alt="">
+        <span>欢迎注册</span>
+    </a>
+</header>
+
+<!--main-->
+<div class="tabBox">
+    <span class="reg_show" id="regper">个人用户</span>
+    <div class="login">
+        已有账号，立即
+        <a href="">登录</a>
+    </div>
+</div>
+
+<!--main-->
+<div class="main">
+    <ul class="main_Userbg">
+        <form id="regForm_mod" method="post">
+            <li class="regMb30">
+                <label>
+                    <font>*</font>
+                    账户名：
+                </label>
+                <span class="regM">
+                    <input type="text" id="userMam" class="regInput" placeholder="手机号">
+                </span>
+                <span class="reg_error" id="userMamErr" style="display: none">
+                    <font class="f_0">请输入正确的手机号</font>
+                </span>
+            </li>
+            <li>
+                <label>
+                    <font>*</font>
+                    登录密码：
+                </label>
+                <span class="regM">
+                    <input type="password" class="regInput" id="password" placeholder="6-12位密码">
+                </span>
+                <span class="reg_error" id="passwordErr" style="display: none">
+                    <font class="f_0">请输入登录密码</font>
+                </span>
+            </li>
+            <li class="safetyLayer">
+                <font>安全程度：</font>
+                <em class="default">弱</em><em class="default">中</em><em class="default">强</em>
+            </li>
+            <li class="regMb30">
+                <label>
+                    <font>*</font>
+                    确认密码：
+                </label>
+                <span class="regM">
+                    <input type="password" class="regInput" id="password2" placeholder="重复密码">
+                </span>
+                <span class="reg_error" id="password2Err" style="display: none">
+                    <font class="f_0">请再次输入密码</font>
+                </span>
+            </li>
+            <li id="yzcode_3" class="regMb30">
+                <label>
+                    <font>*</font>
+                    验证码：
+                </label>
+                <input type="text" class="regCodeInput" id="auth_code">
+                <div id="code"></div>
+                <span class="codeTitle fl">
+                    看不清？<i id="huan">换一换</i>
+                </span>
+                <span class="reg_error" style="display: none" id="auth_codeErr">
+                    <font class="f_0">网站验证码不正确</font>
+                </span>
+            </li>
+            <li class="regP188">
+                <span class="regM">
+                    <input type="checkbox">
+                    <a href="https://passport.sfbest.com/xy.html" class="checkTitle">
+                        我已阅读并同意<font>《顺丰优选用户注册协议》</font>
+                    </a>
+                </span>
+            </li>
+            <li class="register regP188">
+                <button type="button" class="registerNow" id="registerNow">立即注册</button>
+            </li>
+            <br><br>
+        </form>
+    </ul>
+    <div class="reg-tip">
+        <a href="">了解更多>></a>
+    </div>
+</div>
+
+<!--footer-->
+<footer>
+    <span><a href="">关于我们</a> | <a href="">联系我们</a> | <a href="">招聘人才</a> | <a href="">友情链接</a></span>
+    <p>
+        北京顺丰电子商务有限公司
+        <br>
+        北京市公安局顺义分局备案11011302000890号 |京ICP备12011349号 |企业营业执照
+        <br>
+        Copyright© 顺丰优选 sfbest.com 版权所有
+    </p>
+</footer>
+
+<script src="../js/register.js"></script>
+
+</body>
+</html>

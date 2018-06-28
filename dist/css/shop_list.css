@@ -1,0 +1,143 @@
+.fresh-cont{
+    width: 1200px;
+    margin: 0 auto;
+}
+.fresh-floor{
+    margin-top: 10px;
+}
+.floor-hd{
+    overflow: hidden;
+}
+.floor-name {
+    height: 33px;
+    width: 220px;
+    float: left;
+    text-indent: -9999px;
+    border-bottom: 2px solid #76ac25;
+    padding-top: 7px;
+}
+.floor-name .fruit {
+    background: url(http://i.sfimg.cn/html/images/fresh_bg.png) no-repeat;
+    height: 33px;
+    width: 220px;
+}
+.fruit a {
+    height: 33px;
+    width: 220px;
+    display: block;
+}
+.floor-side {
+    float: left;
+    width: 948px;
+    height: 40px;
+    margin-left: 32px;
+    display: inline;
+    border-bottom: 1px solid #333333;
+    overflow: hidden;
+    zoom: 1;
+    font-size: 14px;
+}
+.floor-hd-left {
+    float: left;
+    border-left: 1px solid #dcdcdc;
+    margin-top: 16px;
+}
+.floor-hd-left a {
+    float: left;
+    display: block;
+    width: 90px;
+    height: 16px;
+    text-align: center;
+    border-right: 1px solid #dcdcdc;
+    line-height: 16px;
+    overflow: hidden;
+}
+.floor-hd-more {
+    float: right;
+    padding-right: 20px;
+    height: 40px;
+    width: 127px;
+    position: relative;
+    text-align: right;
+    top: 0;
+    overflow: hidden;
+}
+.floor-hd-more a{
+    line-height: 40px;
+    display: block;
+    width: 127px;
+    height: 40px;
+    background: url("http://i.sfimg.cn/html/images/fresh_animate.png")no-repeat 0 -40px;
+}
+.product-list{
+    width: 1200px;
+}
+.product-list .item {
+    float: left;
+    width: 230px;
+    margin-right: 10px;
+    height: 330px;
+    padding-top: 10px;
+}
+.product-list .fore {
+    padding-top: 0;
+    height: 340px;
+}
+.fore img {
+    width: 220px;
+    height: 340px;
+}
+.product-list .p-item {
+    width: 210px;
+    padding: 8px;
+    height: 310px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.product-list .p-img {
+    margin-bottom: 15px;
+}
+.product-list .title-a{
+    line-height: 20px;
+    height: 40px;
+    overflow: hidden;
+}
+.product-list .p-price {
+    margin: 3px 0 5px 0;
+    height: 20px;
+    overflow: hidden;
+}
+.p-now{
+    float: left;
+    margin-right: 5px;
+    line-height: 20px;
+    color: #ff4800;
+    font-size: 14px;
+}
+.p-now strong{
+    font-size: 20px;
+    font-weight: normal;
+}
+.product-list .p-btn {
+    height: 22px;
+    width: 80px;
+    background-color: #76ac25;
+    border-radius: 3px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    line-height: 22px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+.product-list .p-btn a {
+    color: #fff;
+    text-decoration: none;
+}
+.p-img img{
+    width: 210px;
+    height: 210px;
+}

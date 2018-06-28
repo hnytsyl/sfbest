@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <script src="../js/jquery-2.1.1.js"></script>
+    <link rel="stylesheet" href="../css/index.css">
+    <style>
+        #list{
+            position: absolute;
+            top: 35px;
+            z-index: 20;
+        }
+        #list li{
+            height: 24px;
+            width: 430px;
+            text-align: left;
+            line-height: 24px;
+            font-size: 12px;
+            background-color: #fff;
+            text-indent: 8px;
+        }
+        #list li:hover{
+            background-color: #b4b8bb;
+        }
+        .shopClass_item_span{
+            display: none;
+            position: absolute;
+            width: 630px;
+            height: 150px;
+            left: 200px;
+            top: 0;
+            background-color: #fff;
+            opacity: 0.9;
+        }
+        .shopClass_item_span dd,.shopClass_item_span dt{
+            text-indent: 45px;
+            font-size: 13px;
+            line-height: 24px;
+        }
+        .shopClass_item:hover span{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+<header></header>
+
+<!--top-->
+<div class="top_back">
+    <div class="top">
+        <div class="top_left fl">
+            冷链配送 顺丰到家 送至：<span>郑州</span>
+        </div>
+        <div class="top_right fr">
+            <ul>
+                <li>嘿，欢迎来顺丰优选！</li>
+                <li><a href="login.html">请登录</a></li>
+                <li><a href="register.html">免费注册</a></li>
+                <li><a>我的订单</a></li>
+                <li style="position: relative">
+                    <a>我的优选</a>
+                    <ul class="top_right_ul2">
+                        <li><a>我的订单</a></li>
+                        <li><a>我的积分</a></li>
+                        <li><a>我的收藏</a></li>
+                        <li><a>我的优选卡</a></li>
+                        <li><a>我的优惠券</a></li>
+                    </ul>
+                </li>
+                <li><a href="">移动客户端</a></li>
+                <li style="position: relative">
+                    <a href="">帮助中心</a>
+                    <ul class="top_right_ul2">
+                        <li><a>购物指南</a></li>
+                        <li><a>购物指南</a></li>
+                        <li><a>购物指南</a></li>
+                        <li><a>购物指南</a></li>
+                        <li><a>购物指南</a></li>
+                        <li><a>购物指南</a></li>
+                    </ul>
+                </li>
+                <li><a href="">网站导航</a></li>
+                <li><a href="">微信</a></li>
+                <li><a href="">新浪微博</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--搜索栏-->
+<div class="index_search">
+    <div class="search1 fl">
+        <div class="search1_bottom"></div>
+    </div>
+    <div class="search2 fl"></div>
+    <div class="search3 fl">
+        <form class="search_form" style="position: relative">
+            <input class="search_text fl" id="txt1" type="text">
+            <ul id="list"></ul>
+            <input class="search_btn fr" type="button" value="搜索">
+        </form>
+        <div class="search3_bottom">
+            <a href="">松茸</a>
+            <a href="">松茸</a>
+            <a href="">松茸</a>
+            <a href="">松茸</a>
+            <a href="">松茸</a>
+            <a href="">松茸</a>
+            <a href="">松茸</a>
+            <a href="">松茸</a>
+            <a href="">松茸</a>
+            <a href="">松茸</a>
+        </div>
+    </div>
+    <div class="search4 fr">
+        <span class="shopText fl">我的购物车</span>
+        <span class="shopNum fl">0</span>
+    </div>
+</div>
+
+<!--菜单栏-->
+<div class="nav_back">
+    <div class="comWidth">
+        <div class="shopClass fl">
+            <h3>精选商品分类</h3>
+            <div class="shopClass_show">
+                <span class="shopClass_item">
+                    <h4><a href="shop_list.html"> 肉类海鲜</a></h4>
+                    <ul><li><a >牛肉</a></li><li><a >羊肉</a></li><li><a >小龙虾</a></li><li><a >鱼</a></li></ul>
+                    <span class="shopClass_item_span"></span>
+                </span>
+                <span class="shopClass_item">
+                    <h4><a href="shop_list.html"> 新鲜果蔬</a></h4>
+                    <ul><li><a>猕猴桃</a></li><li><a>猕猴桃</a></li><li><a >猕猴桃</a></li></ul>
+                    <span class="shopClass_item_span"></span>
+                </span>
+                <span class="shopClass_item">
+                    <h4><a href="shop_list.html"> 素食冷藏</a></h4>
+                    <ul><li><a>牛肉</a></li><li><a>羊肉</a></li><li><a >小龙虾</a></li><li><a >鱼</a></li></ul>
+                    <span class="shopClass_item_span"></span>
+                </span>
+                <span class="shopClass_item">
+                    <h4><a href="shop_list.html"> 酒水饮料</a></h4>
+                    <ul><li><a>牛肉</a></li><li><a>羊肉</a></li><li><a >小龙虾</a></li><li><a >鱼</a></li></ul>
+                    <span class="shopClass_item_span"></span>
+                </span>
+                <span class="shopClass_item">
+                    <h4><a href="shop_list.html"> 休闲糖巧</a></h4>
+                    <ul><li><a>牛肉</a></li><li><a>羊肉</a></li><li><a>小龙虾</a></li><li><a>鱼</a></li></ul>
+                    <span class="shopClass_item_span"></span>
+                </span>
+                <span class="shopClass_item">
+                    <h4><a href="shop_list.html"> 粮油干货</a></h4>
+                    <ul><li><a>牛肉</a></li><li><a>羊肉</a></li><li><a>小龙虾</a></li><li><a>鱼</a></li></ul>
+                    <span class="shopClass_item_span"></span>
+                </span>
+                <span class="shopClass_item">
+                    <h4><a href="shop_list.html"> 冲调茶饮</a></h4>
+                    <ul><li><a>牛肉</a></li><li><a>羊肉</a></li><li><a>小龙虾</a></li><li><a>鱼</a></li></ul>
+                    <span class="shopClass_item_span"></span>
+                </span>
+                <span class="shopClass_item">
+                    <h4><a href="shop_list.html"> 优选国际</a></h4>
+                    <ul><li><a>牛肉</a></li><li><a>羊肉</a></li><li><a>小龙虾</a></li><li><a>鱼</a></li></ul>
+                    <span class="shopClass_item_span"></span>
+                </span>
+            </div>
+        </div>
+        <ul class="nav fl">
+            <li><a href="shop_list.html">首页</a></li>
+            <li><a href="shop_list.html">优选生鲜</a></li>
+            <li><a href="shop_list.html">优选厨房</a></li>
+            <li><a href="shop_list.html">优选国际</a></li>
+            <li><a href="shop_list.html">企业专区</a></li>
+            <li><a href="shop_list.html">优选会员</a></li>
+            <li class="fr"><a href=""><img src="../imgs/nav.jpg" alt=""></a></li>
+        </ul>
+    </div>
+</div>
+
+<!--banner-->
+<div class="banner">
+    <div class="ft-carousel" id="carousel_1">
+        <ul class="carousel-inner">
+            <li class="carousel-item"><img src="../imgs/banner1.jpg" /></li>
+            <li class="carousel-item"><img src="../imgs/banner2.jpg" /></li>
+            <li class="carousel-item"><img src="../imgs/banner3.jpg" /></li>
+            <li class="carousel-item"><img src="../imgs/banner4.jpg" /></li>
+            <li class="carousel-item"><img src="../imgs/banner5.jpg" /></li>
+            <li class="carousel-item"><img src="../imgs/banner6.jpg" /></li>
+        </ul>
+    </div>
+
+    <div class="banner_rightside">
+        <img src="../imgs/banner_rightside.jpg" alt="">
+        <img src="../imgs/banner_rightside2.jpg" alt="">
+        <img src="../imgs/banner_rightside2.jpg" alt="">
+    </div>
+</div>
+
+<!--thefifthyear-->
+<div class="thefifthyear">
+    <div class="this_thefifthyear"></div>
+</div>
+
+<!--主体1-->
+<div class="main1">
+    <div class="bestbuy">
+        <div class="b_left">
+            <h2>优选必买<span></span></h2>
+            <ul class="bbig">
+                <!--<li class="price_list0">-->
+                    <!--<a href="html/products.html" class="a_buy">凤中皇 皇后鸡 900g</a>-->
+                    <!--<div class="a_price"><span><i>￥</i>78</span></div>-->
+                    <!--<a href="html/products.html" class="trackref">-->
+                        <!--<img class="lazy" src="http://pic.sfimg.cn/adsSaleGoodsPic/2bd0274b98d8d5efa628d4797a501193.jpg" alt="">-->
+                    <!--</a>-->
+                    <!--<div class="gbtn">-->
+                        <!--<a href="">加入购物车</a>-->
+                    <!--</div>-->
+                <!--</li>-->
+                <!--<li class="price_list0">-->
+                    <!--<a class="a_buy">凤中皇 皇后鸡 900g</a>-->
+                    <!--<div class="a_price"><span><i>￥</i>78</span></div>-->
+                    <!--<a class="trackref">-->
+                        <!--<img class="lazy" src="http://pic.sfimg.cn/adsSaleGoodsPic/2bd0274b98d8d5efa628d4797a501193.jpg" alt="">-->
+                    <!--</a>-->
+                    <!--<div class="gbtn">-->
+                        <!--<a href="">加入购物车</a>-->
+                    <!--</div>-->
+                <!--</li>-->
+                <!--<li class="price_list0">-->
+                    <!--<a class="a_buy">凤中皇 皇后鸡 900g</a>-->
+                    <!--<div class="a_price"><span><i>￥</i>78</span></div>-->
+                    <!--<a class="trackref">-->
+                        <!--<img class="lazy" src="http://pic.sfimg.cn/adsSaleGoodsPic/2bd0274b98d8d5efa628d4797a501193.jpg" alt="">-->
+                    <!--</a>-->
+                    <!--<div class="gbtn">-->
+                        <!--<a href="">加入购物车</a>-->
+                    <!--</div>-->
+                <!--</li>-->
+                <!--<li class="price_list0">-->
+                    <!--<a class="a_buy">凤中皇 皇后鸡 900g</a>-->
+                    <!--<div class="a_price"><span><i>￥</i>78</span></div>-->
+                    <!--<a class="trackref">-->
+                        <!--<img class="lazy" src="http://pic.sfimg.cn/adsSaleGoodsPic/2bd0274b98d8d5efa628d4797a501193.jpg" alt="">-->
+                    <!--</a>-->
+                    <!--<div class="gbtn">-->
+                        <!--<a href="">加入购物车</a>-->
+                    <!--</div>-->
+                <!--</li>-->
+                <!--<li class="price_list0">-->
+                    <!--<a class="a_buy">凤中皇 皇后鸡 900g</a>-->
+                    <!--<div class="a_price"><span><i>￥</i>78</span></div>-->
+                    <!--<a class="trackref">-->
+                        <!--<img class="lazy" src="http://pic.sfimg.cn/adsSaleGoodsPic/2bd0274b98d8d5efa628d4797a501193.jpg" alt="">-->
+                    <!--</a>-->
+                    <!--<div class="gbtn">-->
+                        <!--<a href="">加入购物车</a>-->
+                    <!--</div>-->
+                <!--</li>-->
+                <!--<li class="price_list0">-->
+                    <!--<a class="a_buy">凤中皇 皇后鸡 900g</a>-->
+                    <!--<div class="a_price"><span><i>￥</i>78</span></div>-->
+                    <!--<a class="trackref">-->
+                        <!--<img class="lazy" src="http://pic.sfimg.cn/adsSaleGoodsPic/2bd0274b98d8d5efa628d4797a501193.jpg" alt="">-->
+                    <!--</a>-->
+                    <!--<div class="gbtn">-->
+                        <!--<a href="">加入购物车</a>-->
+                    <!--</div>-->
+                <!--</li>-->
+                <!--<li class="price_list0">-->
+                    <!--<a class="a_buy">凤中皇 皇后鸡 900g</a>-->
+                    <!--<div class="a_price"><span><i>￥</i>78</span></div>-->
+                    <!--<a class="trackref">-->
+                        <!--<img class="lazy" src="http://pic.sfimg.cn/adsSaleGoodsPic/2bd0274b98d8d5efa628d4797a501193.jpg" alt="">-->
+                    <!--</a>-->
+                    <!--<div class="gbtn">-->
+                        <!--<a href="">加入购物车</a>-->
+                    <!--</div>-->
+                <!--</li>-->
+                <!--<li class="price_list0">-->
+                    <!--<a class="a_buy">凤中皇 皇后鸡 900g</a>-->
+                    <!--<div class="a_price"><span><i>￥</i>78</span></div>-->
+                    <!--<a class="trackref">-->
+                        <!--<img class="lazy" src="http://pic.sfimg.cn/adsSaleGoodsPic/2bd0274b98d8d5efa628d4797a501193.jpg" alt="">-->
+                    <!--</a>-->
+                    <!--<div class="gbtn">-->
+                        <!--<a href="">加入购物车</a>-->
+                    <!--</div>-->
+                <!--</li>-->
+                <!--<li class="price_list0">-->
+                    <!--<a class="a_buy">凤中皇 皇后鸡 900g</a>-->
+                    <!--<div class="a_price"><span><i>￥</i>78</span></div>-->
+                    <!--<a class="trackref">-->
+                        <!--<img class="lazy" src="http://pic.sfimg.cn/adsSaleGoodsPic/2bd0274b98d8d5efa628d4797a501193.jpg" alt="">-->
+                    <!--</a>-->
+                    <!--<div class="gbtn">-->
+                        <!--<a href="">加入购物车</a>-->
+                    <!--</div>-->
+                <!--</li>-->
+
+                <!--<li class="price_list0">-->
+                    <!--<a class="a_buy">凤中皇 皇后鸡 900g</a>-->
+                    <!--<div class="a_price"><span><i>￥</i>78</span></div>-->
+                    <!--<a class="trackref">-->
+                        <!--<img class="lazy" src="http://pic.sfimg.cn/adsSaleGoodsPic/2bd0274b98d8d5efa628d4797a501193.jpg" alt="">-->
+                    <!--</a>-->
+                    <!--<div class="gbtn">-->
+                        <!--<a href="">加入购物车</a>-->
+                    <!--</div>-->
+                <!--</li>-->
+
+                <!--<li class="price_list0">-->
+                    <!--<a class="a_buy">凤中皇 皇后鸡 900g</a>-->
+                    <!--<div class="a_price"><span><i>￥</i>78</span></div>-->
+                    <!--<a class="trackref">-->
+                        <!--<img class="lazy" src="http://pic.sfimg.cn/adsSaleGoodsPic/2bd0274b98d8d5efa628d4797a501193.jpg" alt="">-->
+                    <!--</a>-->
+                    <!--<div class="gbtn">-->
+                        <!--<a href="">加入购物车</a>-->
+                    <!--</div>-->
+                <!--</li>-->
+                <!--<li class="price_list0">-->
+                    <!--<a class="a_buy">凤中皇 皇后鸡 900g</a>-->
+                    <!--<div class="a_price"><span><i>￥</i>78</span></div>-->
+                    <!--<a class="trackref">-->
+                        <!--<img class="lazy" src="http://pic.sfimg.cn/adsSaleGoodsPic/2bd0274b98d8d5efa628d4797a501193.jpg" alt="">-->
+                    <!--</a>-->
+                    <!--<div class="gbtn">-->
+                        <!--<a href="">加入购物车</a>-->
+                    <!--</div>-->
+                <!--</li>-->
+                <!--<li class="price_list0">-->
+                    <!--<a class="a_buy">凤中皇 皇后鸡 900g</a>-->
+                    <!--<div class="a_price"><span><i>￥</i>78</span></div>-->
+                    <!--<a class="trackref">-->
+                        <!--<img class="lazy" src="http://pic.sfimg.cn/adsSaleGoodsPic/2bd0274b98d8d5efa628d4797a501193.jpg" alt="">-->
+                    <!--</a>-->
+                    <!--<div class="gbtn">-->
+                        <!--<a href="">加入购物车</a>-->
+                    <!--</div>-->
+                <!--</li>-->
+
+            </ul>
+        </div>
+        <div class="rSide1">
+            <div class="rImg2">
+                <a href="">
+                    <img src="http://001.sfimg.cn/web/53a3419a/53a3419aa98a8e209f36786f8dddcb37.jpg" alt="">
+                </a>
+            </div>
+            <div class="sfNews">
+                <div class="rTitle">
+                    <h2>优选快报</h2>
+                    <a href="" class="more">更多></a>
+                </div>
+                <ul>
+                    <li><a href="">荔枝活动中奖名单</a></li>
+                    <li><a href="">荔枝活动中奖名单</a></li>
+                    <li><a href="">荔枝活动中奖名单</a></li>
+                    <li><a href="">荔枝活动中奖名单</a></li>
+                    <li><a href="">荔枝活动中奖名单</a></li>
+                    <li><a href="">荔枝活动中奖名单</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--抢购-->
+<div class="main2">
+    <div class="rSide2">
+        <a href="">
+            <img class="lazy" src="http://004.sfimg.cn/web/41cd06e4/41cd06e48a4db1820f7d280fb4d8caec.jpg" alt="">
+        </a>
+    </div>
+    <div class="timedbuy">
+        <div class="ttop">
+            <span></span>
+            <p class="t_jd">限时抢购</p>
+            <p class="tt1">还剩</p>
+            <p></p>
+            <dl>
+                <dd id="nowHour1">0</dd>
+                <dd id="nowHour2">0</dd>
+                <dd class="no">时</dd>
+                <dd id="nowMin1">0</dd>
+                <dd id="nowMin2">0</dd>
+                <dd class="no">分</dd>
+                <dd id="nowSecond1">0</dd>
+                <dd id="nowSecond2">0</dd>
+                <dd class="no">秒</dd>
+            </dl>
+            <p></p>
+            <p class="tt2">结束</p>
+            <p class="tright">
+                <a href="">下期预告</a>
+            </p>
+        </div>
+        <div class="tbList">
+            <ul id="nowCon">
+                <li>
+                    <div class="pImg">
+                        <a href="">
+                            <img src="http://201.sfimg.cn/2016/1300214113/middle_1300214113_0_0_1/174x174.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="title-a">
+                        <a href="">龙标 冰糖即食金丝官燕 75g*6</a>
+                    </div>
+                    <div class="pt-price">
+                        <div class="fl p1">￥588</div>
+                    </div>
+                    <div class="price">
+                        会员价<b>￥558</b>
+                    </div>
+                    <a href="" class="p_qg_btn">抢购</a>
+                </li>
+                <li>
+                    <div class="pImg">
+                        <a href="">
+                            <img src="http://201.sfimg.cn/2016/1300214113/middle_1300214113_0_0_1/174x174.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="title-a">
+                        <a href="">龙标 冰糖即食金丝官燕 75g*6</a>
+                    </div>
+                    <div class="pt-price">
+                        <div class="fl p1">￥588</div>
+                    </div>
+                    <div class="price">
+                        会员价<b>￥558</b>
+                    </div>
+                    <a href="" class="p_qg_btn">抢购</a>
+                </li>
+                <li>
+                    <div class="pImg">
+                        <a href="">
+                            <img src="http://201.sfimg.cn/2016/1300214113/middle_1300214113_0_0_1/174x174.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="title-a">
+                        <a href="">龙标 冰糖即食金丝官燕 75g*6</a>
+                    </div>
+                    <div class="pt-price">
+                        <div class="fl p1">￥588</div>
+                    </div>
+                    <div class="price">
+                        会员价<b>￥558</b>
+                    </div>
+                    <a href="" class="p_qg_btn">抢购</a>
+                </li>
+                <li>
+                    <div class="pImg">
+                        <a href="">
+                            <img src="http://201.sfimg.cn/2016/1300214113/middle_1300214113_0_0_1/174x174.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="title-a">
+                        <a href="">龙标 冰糖即食金丝官燕 75g*6</a>
+                    </div>
+                    <div class="pt-price">
+                        <div class="fl p1">￥588</div>
+                    </div>
+                    <div class="price">
+                        会员价<b>￥558</b>
+                    </div>
+                    <a href="" class="p_qg_btn">抢购</a>
+                </li>
+                <li>
+                    <div class="pImg">
+                        <a href="">
+                            <img src="http://201.sfimg.cn/2016/1300214113/middle_1300214113_0_0_1/174x174.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="title-a">
+                        <a href="">龙标 冰糖即食金丝官燕 75g*6</a>
+                    </div>
+                    <div class="pt-price">
+                        <div class="fl p1">￥588</div>
+                    </div>
+                    <div class="price">
+                        会员价<b>￥558</b>
+                    </div>
+                    <a href="" class="p_qg_btn">抢购</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--main3-->
+<div class="main3">
+    <a href="">
+        <img src="http://003.sfimg.cn/web/8ba99cf4/8ba99cf405bc3fb517abb36b50a20918.jpg" alt="">
+    </a>
+</div>
+
+<!--main4-->
+<div class="main4">
+    <div class="category">
+        <div class="mTitle">
+            <h2>
+                <em></em>
+                <a href="">水果</a>
+                <a href="">蔬菜</a>
+            </h2>
+        </div>
+        <div class="lCont">
+            <a href="">
+                <img src="http://001.sfimg.cn/web/f83cc22c/f83cc22cd7a8d0e17dda0a0fb88bedc7.jpg" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="sfRight">
+        <div class="subCont">
+            <ul class="pList">
+                <li class="price_list1">
+                    <div class="pImg">
+                        <a href="">
+                            <img src="http://p02.sfimg.cn/2017/4400273713/middle_w_4400273713_1_7/160x160.jpg" alt="">
+                        </a>
+                        <div class="gBtn">
+                            <a href="">加入购物车</a>
+                        </div>
+                    </div>
+                    <div class="title-a">
+                        <a href="">花果山 36or39号佳沛新西兰</a>
+                    </div>
+                    <div class="a_price">
+                        <span>
+                            <i>￥</i>79.9
+                        </span>
+                    </div>
+                </li>
+                <li class="price_list1">
+                    <div class="pImg">
+                        <a href="">
+                            <img src="http://p02.sfimg.cn/2017/4400273713/middle_w_4400273713_1_7/160x160.jpg" alt="">
+                        </a>
+                        <div class="gBtn">
+                            <a href="">加入购物车</a>
+                        </div>
+                    </div>
+                    <div class="title-a">
+                        <a href="">花果山 36or39号佳沛新西兰</a>
+                    </div>
+                    <div class="a_price">
+                        <span>
+                            <i>￥</i>79.9
+                        </span>
+                    </div>
+                </li>
+                <li class="price_list1">
+                    <div class="pImg">
+                        <a href="">
+                            <img src="http://p02.sfimg.cn/2017/4400273713/middle_w_4400273713_1_7/160x160.jpg" alt="">
+                        </a>
+                        <div class="gBtn">
+                            <a href="">加入购物车</a>
+                        </div>
+                    </div>
+                    <div class="title-a">
+                        <a href="">花果山 36or39号佳沛新西兰</a>
+                    </div>
+                    <div class="a_price">
+                        <span>
+                            <i>￥</i>79.9
+                        </span>
+                    </div>
+                </li>
+                <li class="price_list1">
+                    <div class="pImg">
+                        <a href="">
+                            <img src="http://p02.sfimg.cn/2017/4400273713/middle_w_4400273713_1_7/160x160.jpg" alt="">
+                        </a>
+                        <div class="gBtn">
+                            <a href="">加入购物车</a>
+                        </div>
+                    </div>
+                    <div class="title-a">
+                        <a href="">花果山 36or39号佳沛新西兰</a>
+                    </div>
+                    <div class="a_price">
+                        <span>
+                            <i>￥</i>79.9
+                        </span>
+                    </div>
+                </li>
+                <li class="price_list1">
+                    <div class="pImg">
+                        <a href="">
+                            <img src="http://p02.sfimg.cn/2017/4400273713/middle_w_4400273713_1_7/160x160.jpg" alt="">
+                        </a>
+                        <div class="gBtn">
+                            <a href="">加入购物车</a>
+                        </div>
+                    </div>
+                    <div class="title-a">
+                        <a href="">花果山 36or39号佳沛新西兰</a>
+                    </div>
+                    <div class="a_price">
+                        <span>
+                            <i>￥</i>79.9
+                        </span>
+                    </div>
+                </li>
+                <li class="price_list1">
+                    <div class="pImg">
+                        <a href="">
+                            <img src="http://p02.sfimg.cn/2017/4400273713/middle_w_4400273713_1_7/160x160.jpg" alt="">
+                        </a>
+                        <div class="gBtn">
+                            <a href="">加入购物车</a>
+                        </div>
+                    </div>
+                    <div class="title-a">
+                        <a href="">花果山 36or39号佳沛新西兰</a>
+                    </div>
+                    <div class="a_price">
+                        <span>
+                            <i>￥</i>79.9
+                        </span>
+                    </div>
+                </li>
+                <li class="price_list1">
+                    <div class="pImg">
+                        <a href="">
+                            <img src="http://p02.sfimg.cn/2017/4400273713/middle_w_4400273713_1_7/160x160.jpg" alt="">
+                        </a>
+                        <div class="gBtn">
+                            <a href="">加入购物车</a>
+                        </div>
+                    </div>
+                    <div class="title-a">
+                        <a href="">花果山 36or39号佳沛新西兰</a>
+                    </div>
+                    <div class="a_price">
+                        <span>
+                            <i>￥</i>79.9
+                        </span>
+                    </div>
+                </li>
+                <li class="price_list1">
+                    <div class="pImg">
+                        <a href="">
+                            <img src="http://p02.sfimg.cn/2017/4400273713/middle_w_4400273713_1_7/160x160.jpg" alt="">
+                        </a>
+                        <div class="gBtn">
+                            <a href="">加入购物车</a>
+                        </div>
+                    </div>
+                    <div class="title-a">
+                        <a href="">花果山 36or39号佳沛新西兰</a>
+                    </div>
+                    <div class="a_price">
+                        <span>
+                            <i>￥</i>79.9
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="redge">
+            <ul class="rHot">
+                <li><a href="">奇异果</a></li>
+                <li><a href="">奇异果</a></li>
+                <li><a href="">奇异果</a></li>
+                <li><a href="">奇异果</a></li>
+                <li><a href="">奇异果</a></li>
+                <li><a href="">奇异果</a></li>
+                <li><a href="">奇异果</a></li>
+                <li><a href="">奇异果</a></li>
+                <li><a href="">奇异果</a></li>
+            </ul>
+            <div class="clr"></div>
+            <div class="rimg">
+                <a href="">
+                    <img src="http://002.sfimg.cn/web/64067acf/64067acf8ff400b68ebdd25bb3d1d28e.jpg" alt="">
+                </a>
+                <div class="rbutton">
+                    <a href=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span></span>
+</div>
+
+<!--为你推荐-->
+<div class="promote">
+    <div class="top">
+        <i></i>
+    </div>
+    <ul class="ptList" id="guess_you_like">
+        <li class="price_list2">
+            <div class="pImg">
+                <a href="">
+                    <img src="http://p02.sfimg.cn/2018/6000289537/middle_6000289537_0_1/210x210.jpg" alt="">
+                </a>
+                <div class="gBtn">
+                    <a href=""></a>
+                </div>
+            </div>
+            <div class="title-a">
+                <a href="">优美达 密蜜 益生菌固体饮料 1.5g/袋*16袋</a>
+            </div>
+            <div class="a_price">
+                <span>
+                    <i>￥</i>298
+                </span>
+            </div>
+        </li>
+        <li class="price_list2">
+            <div class="pImg">
+                <a href="">
+                    <img src="http://p02.sfimg.cn/2018/6000289537/middle_6000289537_0_1/210x210.jpg" alt="">
+                </a>
+                <div class="gBtn">
+                    <a href=""></a>
+                </div>
+            </div>
+            <div class="title-a">
+                <a href="">优美达 密蜜 益生菌固体饮料 1.5g/袋*16袋</a>
+            </div>
+            <div class="a_price">
+                <span>
+                    <i>￥</i>298
+                </span>
+            </div>
+        </li>
+        <li class="price_list2">
+            <div class="pImg">
+                <a href="">
+                    <img src="http://p02.sfimg.cn/2018/6000289537/middle_6000289537_0_1/210x210.jpg" alt="">
+                </a>
+                <div class="gBtn">
+                    <a href=""></a>
+                </div>
+            </div>
+            <div class="title-a">
+                <a href="">优美达 密蜜 益生菌固体饮料 1.5g/袋*16袋</a>
+            </div>
+            <div class="a_price">
+                <span>
+                    <i>￥</i>298
+                </span>
+            </div>
+        </li>
+        <li class="price_list2">
+            <div class="pImg">
+                <a href="">
+                    <img src="http://p02.sfimg.cn/2018/6000289537/middle_6000289537_0_1/210x210.jpg" alt="">
+                </a>
+                <div class="gBtn">
+                    <a href=""></a>
+                </div>
+            </div>
+            <div class="title-a">
+                <a href="">优美达 密蜜 益生菌固体饮料 1.5g/袋*16袋</a>
+            </div>
+            <div class="a_price">
+                <span>
+                    <i>￥</i>298
+                </span>
+            </div>
+        </li>
+        <li class="price_list2">
+            <div class="pImg">
+                <a href="">
+                    <img src="http://p02.sfimg.cn/2018/6000289537/middle_6000289537_0_1/210x210.jpg" alt="">
+                </a>
+                <div class="gBtn">
+                    <a href=""></a>
+                </div>
+            </div>
+            <div class="title-a">
+                <a href="">优美达 密蜜 益生菌固体饮料 1.5g/袋*16袋</a>
+            </div>
+            <div class="a_price">
+                <span>
+                    <i>￥</i>298
+                </span>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!--为你推荐结束-->
+<div class="promote-end">
+    <div class="t1"></div>
+    <div class="t2">已经没有了</div>
+</div>
+
+<!--footer-->
+<footer>
+    <div class="footer_zd">
+        <ul>
+            <li class="quanqiu"></li>
+            <li class="chandi"></li>
+            <li class="qcl1"></li>
+            <li class="sfzd"></li>
+        </ul>
+    </div>
+    <div class="foot">
+        <div class="pageFooter">
+            <div class="middle">
+                <ul>
+                    <li class="kefu">9533858</li>
+                    <li>周一至周日8:30-22:00</li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li class="title">购物指南</li>
+                    <li><a href="">积分制度</a></li>
+                    <li><a href="">会员介绍</a></li>
+                    <li><a href="">购物流程</a></li>
+                    <li><a href="">常见问题</a></li>
+                </ul>
+                <ul>
+                    <li class="title">购物指南</li>
+                    <li><a href="">积分制度</a></li>
+                    <li><a href="">会员介绍</a></li>
+                    <li><a href="">购物流程</a></li>
+                    <li><a href="">常见问题</a></li>
+                </ul>
+                <ul>
+                    <li class="title">购物指南</li>
+                    <li><a href="">积分制度</a></li>
+                    <li><a href="">会员介绍</a></li>
+                    <li><a href="">购物流程</a></li>
+                    <li><a href="">常见问题</a></li>
+                </ul>
+                <ul>
+                    <li class="title">购物指南</li>
+                    <li><a href="">积分制度</a></li>
+                    <li><a href="">会员介绍</a></li>
+                    <li><a href="">购物流程</a></li>
+                    <li><a href="">常见问题</a></li>
+                </ul>
+                <ul class="sj">
+                    <li class="title">商家中心</li>
+                    <li><a href="">商家规则</a></li>
+                    <li><a href="">食品安全规范</a></li>
+                    <li><a href="">委托管理创业招募</a></li>
+                </ul>
+            </div>
+            <div class="left">
+                <ul class="f_ios">
+                    <li>
+                        <a href="">手机客户端</a>
+                    </li>
+                    <li>
+                        <span></span>
+                    </li>
+                </ul>
+                <ul class="f_wx">
+                    <li>官方微信</li>
+                    <li>
+                        <span></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="bottom">
+            <div class="_bottom_kx fl">
+                <span>
+                    <a href="">
+                        <img src="http://rr.knet.cn/static/images/logo/credit.png" alt="">
+                    </a>
+                </span>
+            </div>
+            <div class="_bottom_kx fl" style="margin-left: 5px">
+                <span>
+                    <a href="">
+                        <img src="http://icon.szfw.org/cert.png" alt="">
+                    </a>
+                </span>
+            </div>
+            <div class="_bottom_kx fl" style="margin-left: 5px">
+                <span>
+                    <a href="">
+                        <img src="http://i.sfimg.cn/html/images/bottom_sm.png" alt="">
+                    </a>
+                </span>
+            </div>
+            <div class="siteinfo fl">
+                <p>
+                    <span>
+                        <a href="">关于我们</a>
+                    </span>
+                    <span>
+                        <a href="">联系我们</a>
+                    </span>
+                    <span>
+                        <a href="">招聘人才</a>
+                    </span>
+                    <span>
+                        <a href="">友情链接</a>
+                    </span>
+                    <span>Copyright© 顺丰优选 sfbest.com 版权所有</span>
+                </p>
+                <p>
+                    <span>京公网安备11010502026831号</span>
+                    <span>
+                        <a href="" class="beian">京ICP证150325号</a>
+                    </span>
+                    <span>
+                        <a href="" class="beian">食品经营许可证JY11113080533669号</a>
+                    </span>
+                    <span>
+                        <a href="" class="beian">企业营业执照</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!--右侧边栏-->
+<div class="side-wrap">
+    <div class="side-panel">
+        <div class="side-c">
+            <a href="" class="side_v"></a>
+        </div>
+        <!--右侧边购物车-->
+        <div class="side-c">
+            <a href="cart.html" class="s-cart"></a>
+            <span class="s-cart-num"></span>
+        </div>
+        <div class="side-c">
+            <a href="" class="s-guang"></a>
+        </div>
+        <div class="side-c">
+            <a href="" class="s-app"></a>
+        </div>
+        <div class="side-c">
+            <a href="" class="s-promote"></a>
+        </div>
+        <div class="side-c bToTop">
+            <a href="" class="s-top"></a>
+        </div>
+    </div>
+    <div class="cart-wrap">
+        <div class="cart-shopping">
+            <div class="cart-list">
+                <div class="cart-num">
+                    <span class="cart-num-icon">
+                        您有
+                        <span id="add-num">1</span>
+                        件商品成功加入购物车！
+                    </span>
+                </div>
+                <div class="floatcar">
+                    <div class="btnhover"></div>
+                    <div class="floatcar1">
+                        <div class="nopro">
+                            <p>购物车中暂无商品</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-arr"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/ft-carousel.min.js"></script>
+<script src="../js/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,255 @@
+body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend{margin:0; padding:0;}
+ul,li,ol{list-style:none;}
+img,fieldset,button{border:0; }
+img{display:block;}
+a{text-decoration:none; color:#333;cursor: pointer}
+h1,h2,h3,h4,h5,h6{font-weight:100;}
+body{ font-family:"微软雅黑";font-size: 12px;}
+input,a,button{outline:none;}
+
+html{
+    background-color: #f5f5f5;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+
+/*header*/
+header{
+    width: 1000px;
+    margin: 0 auto;
+}
+header img, header span {
+    margin: 10px 0;
+    float: left;
+}
+header span {
+    line-height: 70px;
+    font-size: 24px;
+    padding-left: 3px;
+}
+
+/*main*/
+.tabBox{
+    width: 666px;
+    margin: 0 auto;
+    padding-left: 333px;
+    height: 37px;
+    clear: both;
+    line-height: 0;
+    font-size: 0;
+}
+.tabBox span {
+    display: block;
+    float: left;
+    text-align: center;
+}
+.reg_show{
+    background: url(https://passport.sfbest.com/images/tabbg.jpg) left top no-repeat;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    width: 163px;
+    height: 38px;
+    line-height: 38px;
+    margin-right: 5px;
+}
+.tabBox .login {
+    width: 130px;
+    float: right;
+    padding-top: 14px;
+    font-size: 12px;
+    color: #565656;
+}
+.tabBox .login a {
+    color: #6e9b0c;
+}
+
+/*主体*/
+.main{
+    border-top: 1px solid #d6d5d5;
+    padding: 45px 0 0 40px;
+    width: 960px;
+    height: auto !important;
+    min-height: 490px;
+    background: #fff;
+    margin: 0 auto;
+}
+.main ul{
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.main .main_Userbg{
+    background: url(../imgs/pic10.jpg) 510px 0px no-repeat;
+}
+.regMb30 {
+    margin-bottom: 30px;
+}
+.main_Userbg li{
+    height: 38px;
+}
+.main li label{
+    display: block;
+    float: left;
+    width: 118px;
+    font-size: 14px;
+    color: #515151;
+    height: 38px;
+    line-height: 38px;
+    text-align: right;
+}
+.main li label font {
+    color: #ff4800;
+}
+.main li .regM {
+    width: 268px;
+    height: 36px;
+    line-height: 36px;
+    display: block;
+    float: left;
+    border: 1px solid #cdcdcd;
+}
+.main li .regM .regInput {
+    display: block;
+    float: left;
+    width: 228px;
+    height: 36px;
+    line-height: 36px;
+    border: none;
+    outline: none;
+    color: #515151;
+    padding: 0 5px;
+}
+.main .safetyLayer{
+    color: #666;
+    padding-top: 5px;
+    padding-left: 191px;
+}
+.main .safetyLayer font{
+    font-size: 12px;
+    display: block;
+    float: left;
+}
+.main .safetyLayer em{
+    display: block;
+    float: left;
+    font-style: normal;
+    background: #c4c4c4;
+    text-align: center;
+    width: 34px;
+    margin-right: 2px;
+    color: #fff;
+}
+.main .safetyLayer .ok{
+    background: #f79100;
+}
+.main li .regCodeInput {
+    float: left;
+    padding: 0 5px;
+    width: 58px;
+    height: 36px;
+    border: 1px solid #cdcdcd;
+}
+#code{
+    margin-left: 6px;
+    float: left;
+    width: 106px;
+    height: 36px;
+    text-align: center;
+    background-color: lavenderblush;
+    line-height: 36px;
+    /*background-color: red;*/
+}
+.main li .codeTitle {
+    width: 86px;
+    line-height: 36px;
+    color: #565656;
+    margin-left: 6px;
+}
+.main li .codeTitle i{
+    color: #6e9b0c;
+}
+.main li .reg_error {
+    color: #ff4800;
+    width: 230px;
+    padding: 0 10px 0 15px;
+    float: left;
+    display: block;
+}
+.f_0{
+    line-height: 36px;
+}
+.regP188 {
+    padding-left: 88px;
+}
+.main .regP188 .regM{
+    margin-left: 29px;
+    border: 0;
+}
+li .checkTitle {
+    color: #565656;
+}
+li .checkTitle font{
+    color: #6e9b0c;
+}
+.register{
+    margin-top: 10px;
+    margin-left: 29px;
+}
+.main .registerNow {
+    display: block;
+    float: left;
+    width: 271px;
+    height: 38px;
+    background: url(../imgs/reg_btn.jpg) left top no-repeat;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    margin-right: 20px;
+    line-height: 38px;
+}
+.reg-tip {
+    padding: 15px 10px 10px 45px;
+    border-top: 1px dotted #dcdcdc;
+    position: relative;
+    left: -30px;
+    width: 930px;
+    background: url(https://passport.sfbest.com/images/reg_tip.png) no-repeat 25px 16px;
+}
+.reg-tip a{
+    color: #669900;
+}
+
+/*footer*/
+footer{
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+footer span, footer p {
+    line-height: 26px;
+    margin: 0 auto;
+    text-align: center;
+    color: #515151;
+}
+footer span{
+    display: block;
+    color: #176246;
+}
+footer span a{
+    color: #666;
+}
+
+
+
+.reg_error {
+    color: #ff4800;
+}
+.f_0{
+    line-height: 36px;
+}
